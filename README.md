@@ -14,22 +14,22 @@ User Stories
 
 ```
 As an internet user
-I want to see all of the pages I have saved
-So that I can easily remember pages I would like to re-visit
+I want to see all of the links I have saved
+So that I can easily remember links I would like to re-visit
 
 As an internet user
-I want to be able to order saved pages by date or alphabetically
-So that I can find my saved pages more quickly
+I want to be able to order saved links by date or alphabetically
+So that I can find my saved links more quickly
 
 As an internet user
-I want to save a page's address and name to my bookmark manager
-So that I can re-visit a new website at a later date
+I want to save a links address and name to my bookmark manager
+So that I can re-visit a link at a later date
 
 As an internet user
-I want to be able to tag my saved pages
-So that I can search through the pages more easily
+I want to be able to tag my saved links
+So that I can search through the links more easily
 
 As an internet user
-I want to be able to filter my saved pages by tag
+I want to be able to filter my saved links by tag
 So that I can quickly find links with that tag
 ```

@@ -1,0 +1,20 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/michaelharrison/Projects/makers_academy/bookmark_manager/spec/features/viewing_bookmarks_spec.rb": [
+        1,
+        2,
+        1,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1462273010
+  }
+}
