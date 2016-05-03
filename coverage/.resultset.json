@@ -1,12 +1,12 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/michaelharrison/Projects/makers_academy/bookmark_manager/spec/features/viewing_bookmarks_spec.rb": [
+      "/Users/matthewward/projects/bookmark-manager/spec/features/viewing_bookmarks_spec.rb": [
         1,
         2,
         1,
-        0,
-        0,
+        1,
+        1,
         null,
         0,
         0,
@@ -15,6 +15,6 @@
         null
       ]
     },
-    "timestamp": 1462273010
+    "timestamp": 1462279419
   }
 }
