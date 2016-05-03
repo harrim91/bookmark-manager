@@ -1,6 +1,6 @@
 feature 'Viewing bookmarks' do
-  before { Link.create(url: 'http://www.iammatthewward.com', title: 'I am Matt the Ward')}
   scenario 'Shows saved bookmarks' do
+    Link.create(url: 'http://www.iammatthewward.com', title: 'I am Matt the Ward')
     visit '/links'
     expect(page.status_code).to eq 200
 
