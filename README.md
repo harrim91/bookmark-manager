@@ -7,7 +7,7 @@ Overview
 
 Makers Academy Week 4 Challenge.
 
-Bookmark Manager web app built using Ruby, Sinatra, RSpec, Capybara, HTML and CSS.
+Bookmark Manager web app built using Ruby, Sinatra, PostgreSQL RSpec, Capybara, HTML and CSS.
 
 User Stories
 ---------
@@ -33,3 +33,12 @@ As an internet user
 I want to be able to filter my saved links by tag
 So that I can quickly find links with that tag
 ```
+
+Installation
+-------
+
+- Clone this repo: `git clone git@github.com:harrim91/bookmark-manager.git`
+- Change into the root directory `cd bookmark-manager`
+- Install dependencies `bundle install`
+- Run `ruby app/app.rb`
+- Go to `http://localhost:4567`
