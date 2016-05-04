@@ -1,8 +1,9 @@
+require './app/models/link'
 # As a time-pressed user
 # So that I can quickly go to web sites I regularly visit
 # I would like to see a list of links on the homepage
-feature 'shows the links' do
-  scenario 'it really shows the links' do
+feature 'Viewing links' do
+  scenario 'User can see links on the links page' do
     Link.create(url: 'http://www.makersacademy.com', title: 'Makers Academy')
 
     visit '/links'
