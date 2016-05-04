@@ -3,7 +3,7 @@ feature 'adding links' do
     visit '/links/new'
     fill_in :url, with: "www.test.com"
     fill_in :title, with: "test"
-    click_button "Submit"
+    click_button "Save link"
     expect(page).to have_content "test"
   end
 end

@@ -15,7 +15,7 @@ class Bookmark_manager < Sinatra::Base
     erb :link_save
   end
 
-  post '/links/save' do
+  post '/links' do
     Link.create(title: params[:title], url: params[:url])
     redirect '/links'
   end
