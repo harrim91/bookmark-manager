@@ -101,7 +101,8 @@ DEPENDENCIES
   data_mapper
   database_cleaner
   dm-postgres-adapter
+  dm-transactions
   rspec
 
 BUNDLED WITH
-   1.11.2
+   1.12.1
