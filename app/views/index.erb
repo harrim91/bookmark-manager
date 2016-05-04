@@ -4,10 +4,14 @@
     <li>
       Title: <%=link.title%>
       URL <%=link.url%>
+      <form action='/tags/add'>
+        <input type='submit' value='Add a tag'/>
+      </form>
     </li>
   <% end %>
 </ul>
 
+<br>
 <form action='/links/new'>
   <input type='submit' value='Add new link' name='Add new link'/>
 </form>

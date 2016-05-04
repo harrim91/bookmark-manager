@@ -18,5 +18,12 @@ class BookmarkManager < Sinatra::Base
     redirect '/links'
   end
 
+  get '/tags/add' do
+    erb :newtag
+  end
+  post '/tags/adds' do
+    redirect '/links'
+  end
+
   run! if app_file == $0
 end
