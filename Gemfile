@@ -1,17 +1,17 @@
 source 'https://rubygems.org'
 
-gem 'sinatra'
-gem 'rspec-sinatra'
-gem 'rake'
 gem 'data_mapper'
 gem 'dm-postgres-adapter'
+gem 'database_cleaner'
+gem 'capybara'
+gem 'sinatra'
+gem 'rspec'
+gem 'rspec-sinatra'
+gem 'rake'
 
 
 group :test do
-  gem 'rspec'
   gem 'rubocop-rspec'
   gem 'rubocop'
   gem 'coveralls', require: false
-  gem 'capybara'
-  gem 'database_cleaner'
 end
