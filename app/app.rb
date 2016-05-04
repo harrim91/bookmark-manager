@@ -35,6 +35,15 @@ class BookmarkManager < Sinatra::Base
     erb :'links/index'
   end
 
+  post '/tags/:link_id/new_tag' do
+    existing_tag = Tag.first(name: params[:new_tag])
+    link = Link.first(id: params[:link_id])
+    tag = existing_tag ? existing_tag : Tag.create(name: params[:new_tag])
+    link.tags << tag
+    link.save
+    redirect '/links'
+  end
+
   # start the server if ruby file executed directly
   run! if app_file == $0
 end
