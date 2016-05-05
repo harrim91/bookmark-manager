@@ -2,16 +2,14 @@
 <ul id='links'>
   <% @links.each do |link| %>
     <li>
-      Title: <%=link.title%>
-      URL <%=link.url%>
-      <form action='/tags/add'>
-        <input type='submit' value='Add a tag'/>
-      </form>
+      Title: <%= link.title %>
+      URL: <%= link.url %>
+      Tags: <%= link.tags.inject("") { |string, tag| string << "#{tag.name} " } %>
     </li>
   <% end %>
 </ul>
 
 <br>
-<form action='/links/new'>
+<form action='/links/new' method='get'>
   <input type='submit' value='Add new link' name='Add new link'/>
 </form>
