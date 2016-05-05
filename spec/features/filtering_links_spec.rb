@@ -2,6 +2,7 @@ feature 'Filtering tags' do
   before do
     add_link('Google', 'http://www.google.com', 'search')
     add_link('BBC', 'http://www.bbc.co.uk', 'news')
+    add_link('Guardian', 'http://www.guardian.com', 'news')
   end
 
   scenario 'user can filter links by tags' do
@@ -9,6 +10,7 @@ feature 'Filtering tags' do
     click_button('Filter')
     within 'ul#links' do
       expect(page).to have_content('BBC')
+      expect(page).to have_content('Guardian')
       expect(page).not_to have_content('Google')
     end
   end
