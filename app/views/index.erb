@@ -5,11 +5,14 @@
       Title: <%= link.title %>
       URL: <%= link.url %>
       Tags: <%= link.tags.inject("") { |string, tag| string << "#{tag.name} " } %>
+      <form id='<%= link.title %>' action='/links/<%= link.id %>/new-tag' method='post'>
+        <input type='text' name='tag'/>
+        <input type='submit' value='Add tag' />
+      </form>
     </li>
   <% end %>
 </ul>
 
-<br/>
 <form action='/links/new' method='get'>
   <input type='submit' value='Add new link'/>
 </form>
