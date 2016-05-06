@@ -1,7 +1,6 @@
-require './app/models/link'
-
 feature 'Viewing links' do
   scenario 'User can see links on the links page' do
+    sign_up
     Link.create(url: 'http://www.makersacademy.com', title: 'Makers Academy')
 
     visit '/links'

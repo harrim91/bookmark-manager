@@ -1,5 +1,6 @@
 feature 'adding tags to the links' do
   before do
+    sign_up
     visit '/links'
     click_button('Add new link')
     fill_in(:title, with: 'Google')

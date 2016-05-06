@@ -1,5 +1,6 @@
 feature 'Filtering tags' do
   before do
+    sign_up
     add_link('Google', 'http://www.google.com', 'search')
     add_link('BBC', 'http://www.bbc.co.uk', 'news')
     add_link('Guardian', 'http://www.guardian.com', 'news')

@@ -1,5 +1,6 @@
 feature 'adding links' do
   scenario 'User can add new links ' do
+    sign_up
     visit '/links'
     click_button('Add new link')
     fill_in(:title, with: 'Google')
