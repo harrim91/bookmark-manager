@@ -5,6 +5,9 @@
   </head>
 
   <body>
+    <% if flash[:users] %>
+      <%= flash[:users] %>
+    <% end %>
     <% if current_user %>
       Welcome <%= current_user.username %>!
     <% end %>

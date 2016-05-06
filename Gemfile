@@ -8,6 +8,8 @@ gem 'dm-transactions'
 gem 'sinatra'
 gem 'rake'
 gem 'bcrypt'
+gem 'sinatra-flash'
+
 group :test do
   gem 'database_cleaner'
   gem 'capybara'
