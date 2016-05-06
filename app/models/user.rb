@@ -5,7 +5,7 @@ class User
 
   property :id,                Serial
   property :username,          String
-  property :email,             String, format: :email_address
+  property :email,             String, format: :email_address, required: true
   property :password_digest,   Text
   attr_reader :password
   attr_accessor :password_confirmation
